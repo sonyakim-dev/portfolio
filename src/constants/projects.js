@@ -30,42 +30,42 @@ const projects = [
   {
     name: 'Target VR',
     image: require('../assets/unity-main.png'),
-    link: 'https://www.sonyakim.com/projects/unity-vr',
+    link: 'https://sonyakim.squarespace.com/projects/unity-vr',
     feature: 'Game Development',
     tool: 'Unity',
   },
   {
     name: 'forme.Love',
     image: require('../assets/formelove-main.jpeg'),
-    link: 'https://www.sonyakim.com/projects/forme-love',
+    link: 'https://sonyakim.squarespace.com/projects/forme-love',
     feature: 'Web Design',
     tool: 'Shopify',
   },
   {
     name: 'Promotion Design',
     image: require('../assets/dnaspecialty-main.jpeg'),
-    link: 'https://www.sonyakim.com/projects/dna-specialty',
+    link: 'https://sonyakim.squarespace.com/projects/dna-specialty',
     feature: 'Visual Design',
     tool: 'Photoshop'
   },
   {
     name: 'Craft Trend Fair',
     image: require('../assets/crafttrendfair-main.jpeg'),
-    link: 'https://www.sonyakim.com/projects/craft-trend-fair',
+    link: 'https://sonyakim.squarespace.com/projects/craft-trend-fair',
     feature: 'Commerical Jewelry Design',
     tool: 'craft'
   },
   {
     name: 'Cosmos',
     image: require('../assets/cosmos-main.jpeg'),
-    link: 'https://www.sonyakim.com/projects/living-design',
+    link: 'https://sonyakim.squarespace.com/projects/living-design',
     feature: 'Metal Living Design',
     tool: 'craft'
   },
   {
     name: 'Fantasy',
     image: require('../assets/artjewelry-main.jpeg'),
-    link: 'https://www.sonyakim.com/projects/jewelry-design',
+    link: 'https://sonyakim.squarespace.com/projects/jewelry-design',
     feature: 'Art Jewelry Design',
     tool: 'craft'
   },
