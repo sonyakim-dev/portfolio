@@ -28,7 +28,7 @@ function Home() {
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-9 px-12 sm:px-0'>
           {
             projects.map((project, index) => (
-              <a className=' rounded-xl hover:scale-105 duration-300'>
+              <a className=' rounded-xl hover:scale-105 duration-300' href={project.link}>
                 <img src={project.image} className='rounded-xl aspect-square object-cover'/>
                 <div className='flex flex-row items-center justify-between mx-3 my-3'>
                   <h3 className='text-[23px] font-medium`'>{project.name}</h3>
