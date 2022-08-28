@@ -8,4 +8,10 @@
   html {
     font-family: 'Manrope', sans-serif;
   }
+  .icon {
+    color: '565656';
+  }
+  .icon:hover {
+    color: red;
+  }
 }

@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../style';
 import projects from '../constants/projects';
 import { FaHammer } from 'react-icons/fa'
 import { SiCplusplus, SiUnity, SiShopify, SiHtml5, SiReact, SiAdobephotoshop } from 'react-icons/si';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import TargetVR from './TargetVR';
+import FormeLove from './FormeLove';
 
 function Home() {
-  
+  const [projectPage, setProjectPage] = useState('');
+
   return (
     <section id='Home' className={`flex flex-col ${styles.paddingY} `}>
       {/* intro */}
       <div name='intro' className={`flex flex-row ${styles.flexStart} justify-between sm:px-16 px-6 mb-20`}>
         <div className='flex-col'>
           <h1 className='font-semibold ss:text-[72px] text-[62px] ss:leading-[100px] leading-[80px] ss:mb-10 mb-5'>
-            👋, I'm a<br/>Developer + Designer
+            <div className='flex felx-row items-center'>
+              <img src={require('../assets/waving-hand.png')} className='h-[80px]'/>,I'm a
+            </div>
+            Developer + Designer
           </h1>
           <p className='ss:text-[16px] text-[14px]'>
             I studied Art Craft and worked as a Graphic Designer for 2 years.<br/>
@@ -28,12 +35,16 @@ function Home() {
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-9 px-12 sm:px-0'>
           {
             projects.map((project, index) => (
-              <a className=' rounded-xl hover:scale-105 duration-300' href={project.link}>
+              <div
+                key={index}
+                className='rounded-xl hover:scale-105 duration-300 hover:cursor-pointer'
+                onClick={()=> {/*setProjectPage(project.name);*/ project.link != null && window.open(`${project.link}`, '_blank')}}
+              >
                 <img src={project.image} className='rounded-xl aspect-square object-cover'/>
                 <div className='flex flex-row items-center justify-between mx-3 my-3'>
-                  <h3 className='text-[23px] font-medium`'>{project.name}</h3>
-                  <div className='flex flex-row items-center space-x-1'>
-                    <p className='text-[15px]'>{project.feature}</p>
+                    <h3 className='text-[23px] font-medium`'>{project.name}</h3>
+                  <div className='flex flex-row items-center space-x-1 rounded-xl bg-slate-100 px-3 py-1'>
+                    <p className='text-[15px] pr-1'>{project.feature}</p>
                     {project.tool === 'React' && (<SiReact size={20} color='#60D9FA'/>)}
                     {project.tool === 'HTML' && (<SiHtml5 size={20} color='#F25320'/>)}
                     {project.tool === 'C++' && (<SiCplusplus size={20} color='#9C033A'/>)}
@@ -43,11 +54,15 @@ function Home() {
                     {project.tool === 'craft' && (<FaHammer size={20} color='black'/>)}
                   </div>
                 </div>
-              </a>
+              </div>
             ))
           }
         </div>
       </div>
+
+      {
+        projectPage === 'Target VR' && (<TargetVR/>)
+      }
     </section>
   )
 }

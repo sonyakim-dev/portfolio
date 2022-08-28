@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <nav className='w-full py-3 flex justify-between items-center navbar'>
       <div className='flex flex-row items-center'>
-        <a className='text-xl font-medium' href=''>SONYA KIM</a>
+        <a className='text-xl font-medium' href={require('../index')}>SONYA KIM</a>
         <img src={icon} className='w-[40px] h-[40px] ml-1'/>
       </div>
 
@@ -33,10 +33,10 @@ const NavBar = () => {
         }
       </ul> */}
       <div className='flex flex-row'>
-        <a href='https://www.linkedin.com/in/sonya-kim/' className='mr-4'>
-          <SiLinkedin size={25} color={'565656'} />
+        <a href='https://www.linkedin.com/in/sonya-kim/' className='mr-5' target='blank'>
+          <SiLinkedin size={25} color={'565656'}/>
         </a>
-        <a href='https://github.com/sonyakim-dev'>
+        <a href='https://github.com/sonyakim-dev' target='blank'>
           <SiGithub size={25} color={'565656'}/>
         </a>
       </div>
