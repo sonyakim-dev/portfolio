@@ -40,7 +40,7 @@ function Home() {
                 className='rounded-xl hover:scale-105 duration-300 hover:cursor-pointer'
                 onClick={()=> {/*setProjectPage(project.name);*/ project.link != null && window.open(`${project.link}`, '_blank')}}
               >
-                <img src={project.image} className='rounded-xl aspect-square object-cover'/>
+                <img src={project.image} className='rounded-xl aspect-square object-cover w-full'/>
                 <div className='flex flex-row items-center justify-between mx-3 my-3'>
                     <h3 className='text-[23px] font-medium`'>{project.name}</h3>
                   <div className='flex flex-row items-center space-x-1 rounded-xl bg-slate-100 px-3 py-1'>

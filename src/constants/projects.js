@@ -34,28 +34,28 @@ const projects = [
   {
     name: 'Target VR',
     image: require('../assets/unity-main.png'),
-    link: 'https://sonyakim.squarespace.com/projects/unity-vr',
+    link: 'https://sonyakim.webflow.io/project/targetvr',
     feature: 'Game Dev',
     tool: 'Unity',
   },
   {
     name: 'forme.Love',
     image: require('../assets/formelove-main.jpeg'),
-    link: 'https://sonyakim.squarespace.com/projects/forme-love',
+    link: 'https://sonyakim.webflow.io/project/formelove',
     feature: 'Web Design',
     tool: 'Shopify',
   },
   {
     name: 'Promotion Design',
     image: require('../assets/dnaspecialty-main.jpeg'),
-    link: 'https://sonyakim.squarespace.com/projects/dna-specialty',
+    link: 'https://sonyakim.webflow.io/project/dna',
     feature: 'Visual Design',
     tool: 'Photoshop'
   },
   {
     name: 'Craft Trend Fair',
     image: require('../assets/crafttrendfair-main.jpeg'),
-    link: 'https://sonyakim.squarespace.com/projects/craft-trend-fair',
+    link: 'https://sonyakim.webflow.io/project/crafttrendfair',
     feature: 'Jewelry Design',
     tool: 'craft'
   },
