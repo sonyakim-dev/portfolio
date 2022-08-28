@@ -19,8 +19,8 @@ const NavBar = () => {
   return (
     <nav className='w-full py-3 flex justify-between items-center navbar'>
       <div className='flex flex-row items-center'>
-        <a className='text-xl font-medium' href='/'>SONYA KIM</a>
-        <img src={icon} className='w-[40px] h-[40px] ml-1'/>
+        <a className='text-xl font-medium mr-1' href='/'>SONYA KIM</a>
+        <img src={icon} className='w-[33px] ml-1'/>
       </div>
 
       {/* <ul className='flex flex-row'>
