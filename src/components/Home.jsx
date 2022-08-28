@@ -15,7 +15,7 @@ function Home() {
       {/* intro */}
       <div name='intro' className={`flex flex-row ${styles.flexStart} justify-between sm:px-16 px-6 mb-20`}>
         <div className='flex-col'>
-          <h1 className='font-semibold ss:text-[72px] text-[62px] ss:leading-[100px] leading-[80px] ss:mb-10 mb-5'>
+          <h1 className='font-semibold ss:text-[72px] text-[52px] ss:leading-[100px] leading-[80px] ss:mb-10 mb-5'>
             <div className='flex felx-row items-center'>
               <img src={require('../assets/waving-hand.png')} className='h-[80px]'/>,I'm a
             </div>
@@ -32,7 +32,7 @@ function Home() {
 
       {/* portfolio */}
       <div name='portfolio' className='w-full mx-auto flex flex-col justify-center'>
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-9 px-12 sm:px-0'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-9 px-5 sm:px-0'>
           {
             projects.map((project, index) => (
               <div
